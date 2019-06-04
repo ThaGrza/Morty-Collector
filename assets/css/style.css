@@ -1,11 +1,46 @@
+body{
+}
 .crystals{
     display: flex;
-    justify-content: space-around;
+    float: left;
 }
 
+.col-md-4.instructions{
+    background-color: rgb(207, 126, 21);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;}
+.col-md-5{
+    color: rgb(20, 105, 20);
+    background-color: rgb(248, 222, 166);
+    height: 410px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+.col-md-2.win-lost{
+    background-color: light rgb(14, 229, 245);
+    /* position: relative; */
+    /* float: left; */
+}
+#target{
+    float: left;
+    background-color: rgb(86, 175, 86);
+    color: black;
+    font-size: 36px;
+    padding: 40px;
+    margin: 10px;
+    line-height: 1.5em;
+}
+
+
 .crystal{
-    border:1px solid green;
+    border:1px solid red;
     height: 200px;
     width: 200px;
+    margin: 15px;
 }
 

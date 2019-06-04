@@ -10,8 +10,7 @@ random_result = Math.floor(Math.random() * 101) + 19;
 console.log(random_result);
 
 // Displays current score and target score.
-$("#target").html("Random Result: " + random_result);
-$("#currentNum").html("Current Score: " + current);
+$("#target").html(random_result);
 
 
 
@@ -53,5 +52,7 @@ $(document).on("click", ".crystal", function() {
         startGame();
 
     }
-    console.log(current);
+    
+    // Displays current score and target score.
+    $("#currentNum").html("Current Score: " + current);
 });
