@@ -1,5 +1,12 @@
 body{
+    background-image: url("../images/background.jpg");
 }
+
+.container {
+    margin: auto;
+    margin-top: 25px;
+}
+
 .crystals{
     display: flex;
     float: left;
@@ -12,20 +19,27 @@ body{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-bottom: 10px;}
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+}
+    
 .col-md-5{
-    color: rgb(20, 105, 20);
-    background-color: rgb(248, 222, 166);
-    height: 410px;
+    color: black;
+    background-color: white;
     text-align: center;
     font-size: 18px;
     line-height: 1.5em;
+    border-radius: 10px;
+    padding: 10px;
 }
+
 .col-md-2.win-lost{
     background-color: light rgb(14, 229, 245);
     /* position: relative; */
     /* float: left; */
 }
+
 #target{
     float: left;
     background-color: rgb(86, 175, 86);
@@ -34,8 +48,9 @@ body{
     padding: 40px;
     margin: 10px;
     line-height: 1.5em;
-}
+    border-radius: 10px;
 
+}
 
 .crystal{
     border:1px solid red;
@@ -44,3 +59,19 @@ body{
     margin: 15px;
 }
 
+#win {
+    padding-top: 15px;
+    font-size: large;
+    font-weight: bold;
+
+}
+
+#lost {
+    font-size: large;
+    font-weight: bold;
+}
+
+#currentNum {
+    font-size: large;
+    font-weight: bold;
+}
