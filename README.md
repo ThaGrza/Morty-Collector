@@ -13,8 +13,9 @@ N/A
 ## Screenshots / Gifs
 
 ## Tech/framework used
-Javascript, Html, Css, Jquery
-
+<b> Built with </b>
+-[Javascript](https://www.javascript.com/)
+-[Jquery](https://jquery.com/)
 ## Features
 N/A
 
