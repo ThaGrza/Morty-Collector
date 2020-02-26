@@ -8,7 +8,7 @@ Jewel Collector.
 Jewel Collector is a fun small game to practice Jquery.
 
 ## How to
-To play Jewel Collector simpling go to https://agriswold7.github.io/JewelCol…  and click on any jewel to begin. Click and see the different values of each jewel and try to match the target score.
+To play Jewel Collector simpling go to https://agriswold7.github.io/JewelCollector and click on any jewel to begin. Click and see the different values of each jewel and try to match the target score.
 
 ## Build Status
 N/A
