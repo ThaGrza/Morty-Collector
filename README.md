@@ -14,8 +14,8 @@ N/A
 
 ## Tech/framework used
 <b> Built with </b>
--[Javascript](https://www.javascript.com/)
--[Jquery](https://jquery.com/)
+- [Javascript](https://www.javascript.com/)
+- [Jquery](https://jquery.com/)
 ## Features
 N/A
 
