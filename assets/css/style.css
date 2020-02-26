@@ -1,77 +1,81 @@
-body{
+body {
     background-image: url("../images/background.jpg");
-}
-
-.container {
-    margin: auto;
-    margin-top: 25px;
-}
-
-.crystals{
-    display: flex;
+    background-repeat: repeat;
+}  
+  #screen {
+    overflow: auto;
+  }
+  
+  #screen div {
     float: left;
-}
-
-.col-md-4.instructions{
-    background-color: rgb(207, 126, 21);
-    color: white;
-    padding: 5px;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  }
+  
+  #title {
+    border-radius: 7px;
+    width: 250px;
+    padding: 4px;
     margin-bottom: 10px;
-    border-radius: 10px;
-
-}
-    
-.col-md-5{
+    color: white;
+    background-color: chocolate;
+  }
+  
+  #rules-area {
+    border-radius: 7px;
+    width: 400px;
+    height: 400px;
+    padding: 4px;
+    margin-bottom: 10px;
     color: black;
     background-color: white;
+  }
+  
+  #random-area {
     text-align: center;
-    font-size: 18px;
-    line-height: 1.5em;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.col-md-2.win-lost{
-    background-color: light rgb(14, 229, 245);
-    /* position: relative; */
-    /* float: left; */
-}
-
-#target{
-    float: left;
-    background-color: rgb(86, 175, 86);
+    padding: 30px;
+    font-size: 3vw;
     color: black;
-    font-size: 36px;
-    padding: 40px;
-    margin: 10px;
-    line-height: 1.5em;
-    border-radius: 10px;
-
-}
-
-.crystal{
-    border:1px solid red;
-    height: 200px;
-    width: 200px;
-    margin: 15px;
-}
-
-#win {
-    padding-top: 15px;
-    font-size: large;
+    background-color: mediumseagreen;
+  }
+  
+  #score-area {
+    width: 210px;
+    height: 100px;
+    padding: 4px;
+    color: ghostwhite;
+    background-color: darkcyan;
+  }
+  
+  #score-title {
+    width: 210px;
+    padding: 4px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: darkcyan;
+  }
+  
+  .crystals-button {
+    display: inline;
+  }
+  
+  .crystal-img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    background-color: white;
+    border: solid;
+    border-color: lightblue;
+  }
+  
+  #score-number {
+    font-size: 3vw;
+  }
+  
+  #win-area {
+    border-radius: 7px;
+    padding-right: 15px;
+    padding: 4px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: aqua;
     font-weight: bold;
-
-}
-
-#lost {
-    font-size: large;
-    font-weight: bold;
-}
-
-#currentNum {
-    font-size: large;
-    font-weight: bold;
-}
+  }
