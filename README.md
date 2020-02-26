@@ -1,6 +1,9 @@
 ## Project Title
 Jewel Collector.
 
+## Screenshots / Gifs
+<a img="screenshot.png">
+
 ## Motivation
 Jewel Collector is a fun small game to practice Jquery.
 
@@ -9,8 +12,6 @@ N/A
 
 ## Styling
 N/A
-
-## Screenshots / Gifs
 
 ## Tech/framework used
 <b> Built with </b>
