@@ -2,7 +2,7 @@
 Jewel Collector.
 
 ## Screenshots / Gifs
-<a img="screenshot.png">
+![Screenshot](screenshot.jpg)
 
 ## Motivation
 Jewel Collector is a fun small game to practice Jquery.
