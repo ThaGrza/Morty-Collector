@@ -1,5 +1,4 @@
-## Project Title
-Jewel Collector.
+## Jewel Collector
 
 ## Screenshots / Gifs
 ![Screenshot](screenshot.jpg)
