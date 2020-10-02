@@ -1,7 +1,14 @@
 body {
     background-image: url("../images/background.jpg");
     background-repeat: repeat;
-}  
+} 
+
+.container{
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
   #screen {
     overflow: auto;
   }
@@ -9,7 +16,7 @@ body {
   #screen div {
     float: left;
   }
-  
+
   #title {
     border-radius: 7px;
     width: 250px;
