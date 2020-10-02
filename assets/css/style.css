@@ -1,7 +1,7 @@
 body {
     background-image: url("../images/background.jpg");
     background-repeat: repeat;
-} 
+}
 
 .container{
   display: flex;
@@ -9,39 +9,53 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-  #screen {
+
+#screen {
     overflow: auto;
   }
-  
+
   #screen div {
     float: left;
   }
 
   #title {
+    font-size: 76px;
     border-radius: 7px;
-    width: 250px;
-    padding: 4px;
-    margin-bottom: 10px;
+    padding: 10px;
     color: white;
     background-color: chocolate;
   }
-  
+
   #rules-area {
     border-radius: 7px;
-    width: 400px;
-    height: 400px;
-    padding: 4px;
+    font-size: 24px;
+    width: 80%;
     margin-bottom: 10px;
-    color: black;
-    background-color: white;
+    color: rgb(70, 69, 69);
+    background-color: rgb(245, 240, 240);
   }
-  
+
+  .rules-text{
+    text-indent: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
   #random-area {
     text-align: center;
-    padding: 30px;
+    padding: 30px 30px 30px 0px;
     font-size: 3vw;
     color: black;
-    background-color: mediumseagreen;
+    background-color: rgb(184, 39, 28);
+  }
+
+  .target-score{
+    color: black;
+    background-color: rgb(184, 39, 28);
+    font-size: 3vw;
+    padding: 30px;
+    text-align: center;
   }
   
   #score-area {
@@ -53,6 +67,7 @@ body {
   }
   
   #score-title {
+    font-size: 24px;
     width: 210px;
     padding: 4px;
     margin-bottom: 10px;
@@ -74,7 +89,9 @@ body {
   }
   
   #score-number {
+    text-align: center;
     font-size: 3vw;
+    padding-top: 15px;
   }
   
   #win-area {
