@@ -1,105 +1,112 @@
 body {
-    background-image: url("../images/background.jpg");
-    background-repeat: repeat;
+  background-image: url("../images/background.jpeg");
+  background-position-x: left;
 }
 
 .container{
   display: flex;
   place-items: center;
+  /* text-align: center; */
   flex-direction: column;
   min-height: 100vh;
 }
 
-#screen {
-    overflow: auto;
-  }
 
-  #screen div {
-    float: left;
-  }
-
-  #title {
+#title {
     font-size: 76px;
     border-radius: 7px;
     padding: 10px;
     color: white;
     background-color: chocolate;
-  }
+}
 
-  #rules-area {
+#rules-area {
     border-radius: 7px;
     font-size: 24px;
     width: 80%;
     margin-bottom: 10px;
     color: rgb(70, 69, 69);
     background-color: rgb(245, 240, 240);
-  }
+}
 
-  .rules-text{
-    text-indent: 2rem;
-    padding: 1rem;
-    font-size: 2rem;
-    line-height: 3rem;
-  }
+.rules-text{
+  text-align: left;
+  text-indent: 2rem;
+  padding: 1rem;
+  font-size: 2rem;
+  line-height: 3rem;
+}
 
-  #random-area {
-    text-align: center;
-    padding: 30px 30px 30px 0px;
-    font-size: 3vw;
-    color: black;
-    background-color: rgb(184, 39, 28);
-  }
+#random-area {
+  text-align: center;
+  padding: 30px 30px 30px 0px;
+  font-size: 3vw;
+  color: black;
+  background-color: rgb(184, 39, 28);
+}
 
-  .target-score{
-    color: black;
-    background-color: rgb(184, 39, 28);
-    font-size: 3vw;
-    padding: 30px;
-    text-align: center;
-  }
-  
-  #score-area {
-    width: 210px;
-    height: 100px;
-    padding: 4px;
-    color: ghostwhite;
-    background-color: darkcyan;
-  }
-  
-  #score-title {
-    font-size: 24px;
-    width: 210px;
-    padding: 4px;
-    margin-bottom: 10px;
-    color: white;
-    background-color: darkcyan;
-  }
-  
-  .crystals-button {
-    display: inline;
-  }
-  
-  .crystal-img {
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-    background-color: white;
-    border: solid;
-    border-color: lightblue;
-  }
-  
-  #score-number {
-    text-align: center;
-    font-size: 3vw;
-    padding-top: 15px;
-  }
-  
-  #win-area {
-    border-radius: 7px;
-    padding-right: 15px;
-    padding: 4px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    background-color: aqua;
-    font-weight: bold;
-  }
+.target-score{
+  margin: 10px;
+  border-radius: 7px;
+  color: black;
+  background-color: rgb(184, 39, 28);
+  font-size: 3vw;
+  padding: 30px;
+  text-align: center;
+}
+
+#score-title {
+  margin: 10px;
+  color: white;
+  font-size: 3vw;
+  padding: 30px;
+  border-radius: 7px;
+  text-align: center;
+  background-color: rgb(43, 115, 209);
+}
+
+.crystals-button {
+  display: inline;
+}
+
+#crystal-area{
+  text-align: center;
+}
+.crystal-img {
+  width: 200px;
+  height: 223px;
+  margin: 15px;
+  cursor: pointer;
+  background-color: white;
+  border: solid;
+  border-color: lightblue;
+  transition: transform .3s;
+}
+.crystal-img:hover{
+  transform: scale(1.1);
+}
+
+#score-number {
+  text-align: center;
+  padding: 30px 30px 30px 0px;
+  font-size: 3vw;
+  color: white;
+  background-color: rgb(43, 115, 209);
+
+}
+
+#win-area {
+  font-size: 3vw;
+  border-radius: 7px;
+  padding-right: 15px;
+  padding: 0 20px 0 20px;
+  margin-bottom: 10px;
+  /* margin-top: 30px; */
+  height: fit-content;
+  background-color: rgb(36, 185, 61);
+  font-weight: bold;
+}
+
+.game-info{
+  display: flex;
+}
