@@ -1,12 +1,11 @@
 body {
     background-image: url();
     margin: auto;
+    background-color: #fff;
 }
 
 .container {
-    align-content: center;
-
-
+    text-align: center;
 }
 
 .navbar { 
@@ -22,6 +21,8 @@ body {
 #navbarImage {
     height:100px;
     width: 250px;
+    position: absolute;
+    left: 0;
 }
 
 .navbarHeader {
@@ -31,7 +32,6 @@ body {
 }
 
 #mortysOnDeck {
-    background-color: rgb(245, 221, 11);
     float: left;
 }
 
@@ -44,17 +44,18 @@ body {
     color: blue;
 }
 #gameRules{
-    font-size: 18px;
+    font-size: 20px;
+}
+
+#portal {
+    text-decoration: none;
 }
 
 #gameArea {
-    justify-content: center;
     background-image: url("https://www.denofgeek.com/wp-content/uploads/2020/04/Rick-and-Morty-Zoom-Backgrounds-Bedroom.jpg?fit=1024%2C576");
     background-size: cover;
     height: 700px;
     width: 80%;
-    align-content: center;
-    float: left;
     margin: auto;
 }
 
