@@ -1,0 +1,60 @@
+body {
+    background-image: url();
+    margin: auto;
+}
+
+.container {
+    align-content: center;
+
+
+}
+
+.navbar { 
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    background-image: url("https://media.istockphoto.com/vectors/space-stars-vector-illustration-of-the-night-sky-vector-id1131246596?k=6&m=1131246596&s=170667a&w=0&h=aUdMuVkhWVZuoY9pcbVTaEXBghy4OTbtHXJamg6P_GE=");
+}
+
+#navbarImage {
+    height:100px;
+    width: 250px;
+}
+
+.navbarHeader {
+    justify-content: center;
+    font-size: 48px;
+    color: #a6d84f; 
+}
+
+#mortysOnDeck {
+    background-color: rgb(245, 221, 11);
+    float: left;
+}
+
+#mortysCollected {
+    background-color: rgb(245, 221, 11);
+    float: right;
+}
+
+.morty {
+    color: blue;
+}
+#gameRules{
+    font-size: 18px;
+}
+
+#gameArea {
+    justify-content: center;
+    background-image: url("https://www.denofgeek.com/wp-content/uploads/2020/04/Rick-and-Morty-Zoom-Backgrounds-Bedroom.jpg?fit=1024%2C576");
+    background-size: cover;
+    height: 700px;
+    width: 80%;
+    align-content: center;
+    float: left;
+    margin: auto;
+}
+

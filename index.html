@@ -2,34 +2,35 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Crystal Collector</title>
+    <title>Morty Collector</title>
 
     <!-- jQuery Link -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
     
   </head>
   <body>
     <div class="container">
-      <h1 id="title">CrystalsCollector!</h1>
 
-      <div id="rules-area">
-        <div class='rules-text'> You will be given a random number at the start of the game.
-        There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
-        You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
-        The value of each crystal is hidden from you until you click on it.
-        Each time when the game starts, the game will change the values of each crystal.
-        </div>
+      <div class="navbar">
+        <img id="navbarImage" src="https://upload.wikimedia.org/wikipedia/en/c/c8/Rick_and_Morty_logo.png">
+        <h1 class="navbarHeader">Morty Collector</h1>
       </div>
-      <div class='game-info'>
-        <div id="win-area"></div>
-        <div class="target-score"><span>Target Score:</span><div id="random-area"></div></div>
-        <div id="score-title"><span>Your total score is:</span><div id="score-area"></div>
+
+      <div id="mortysOnDeck">
+        <le class="morty">Mortys on Deck</le>
       </div>
+
+      <div id="mortysCollected">
+        <le class="morty">Mortys collected</le>
       </div>
-      <div id="crystal-area"></div>
+      <div id="gameRules">
+        <p> Click on a Morty to reveal their value, match your current score to the target score and collect the Morty you made the winning match with! Collect all 6 Morty's to win.</p>
       </div>
+
+      <div id="gameArea"></div>
+
     </div>
   <script type="text/javascript" src="assets/javascript/game.js"></script>
   </body>

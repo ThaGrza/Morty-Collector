@@ -1,16 +1,15 @@
 body {
-  background-image: url("../images/background.jpeg");
+  background-image: url();
 }
 
 .container{
   display: flex;
   place-items: center;
-  /* text-align: center; */
   flex-direction: column;
   min-height: 100vh;
 }
 
-
+¡
 #title {
     font-size: 76px;
     border-radius: 7px;
@@ -83,7 +82,7 @@ body {
 }
 .crystal-img:hover{
   transform: scale(1.1);
-}
+}        
 
 #score-number {
   text-align: center;

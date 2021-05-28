@@ -11,14 +11,13 @@ $(document).ready(function() {
   var wins = 0;
   var losses = 0;
   var crystals;
-
   // Function that generates random values for our crystals and returns our crystals object.
   function randomNumCrystals() {
     // Crystals object.
     return {
       red: {
         points: Math.floor(Math.random() * 12) + 1,
-        imageUrl: "assets/images/red.jpg"
+        imageUrl: "assets/images/red.jpg",
       },
       blue: {
         points: Math.floor(Math.random() * 12) + 1,
@@ -105,7 +104,7 @@ $(document).ready(function() {
     var scoreNumDiv = $("<div id='score-number'>").text(yourMatchingNumber);
     $("#score-area").html();
     $("#score-area").html(scoreNumDiv);
-  }
+ }
 
   // Call our functions to start the game!
   setGame();
