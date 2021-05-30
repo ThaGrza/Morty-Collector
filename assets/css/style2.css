@@ -6,6 +6,7 @@ body {
 
 .container {
     text-align: center;
+
 }
 
 .navbar { 
@@ -51,6 +52,21 @@ body {
     text-decoration: none;
 }
 
+.scoreArea {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#targetScore {
+    padding-right: 50px;
+
+}
+
+#currentScore {
+
+}
+
 #gameArea {
     background-image: url("https://www.denofgeek.com/wp-content/uploads/2020/04/Rick-and-Morty-Zoom-Backgrounds-Bedroom.jpg?fit=1024%2C576");
     background-size: cover;
@@ -58,4 +74,3 @@ body {
     width: 80%;
     margin: auto;
 }
-
