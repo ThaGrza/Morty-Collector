@@ -68,9 +68,28 @@ body {
 }
 
 #gameArea {
+    justify-content: center;
+    display: flex;
     background-image: url("https://www.denofgeek.com/wp-content/uploads/2020/04/Rick-and-Morty-Zoom-Backgrounds-Bedroom.jpg?fit=1024%2C576");
     background-size: cover;
     height: 700px;
     width: 80%;
     margin: auto;
+}
+
+#mortyArea{
+    display: flex;
+}
+
+.mortyImage{
+    height: 350px;
+    width: auto;
+    background-color: #a6d84f;
+    margin: 10px;
+    border-radius: 10%;
+    transition: transform .3s;
+}
+
+.mortyImage:hover{
+    transform: scale(1.1);
 }
