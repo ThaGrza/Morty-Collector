@@ -32,15 +32,6 @@ body {
     color: #a6d84f; 
 }
 
-#mortysOnDeck {
-    float: left;
-}
-
-#mortysCollected {
-    background-color: rgb(245, 221, 11);
-    float: right;
-}
-
 #gameRules{
     font-size: 20px;
 }
@@ -93,7 +84,7 @@ body {
 
 .collectedMorty{
     height: 200px;
-    width: auto;
+    width: 100px;
     background-color: #a6d84f;
     margin: 10px;
     border-radius: 10%;
@@ -102,4 +93,21 @@ body {
 #mortysCollected{
     display: flex;
     flex-direction: column;
+    background-color: rgb(245, 221, 11);
+    float: right;
+}
+
+#mortysOnDeck{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 221, 11);
+    float: left;
+}
+
+.onDeckMorty{
+    height: 150px;
+    width: 100px;
+    background-color: #a6d84f;
+    margin: 10px;
+    border-radius: 10%;
 }
