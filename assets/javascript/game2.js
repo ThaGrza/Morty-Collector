@@ -42,9 +42,10 @@ $(document).ready(function() {
             image: "assets/images/mortys/Morty0.png",
         },
     }
-    var onDeckMortys = Object.keys(mortys).map((key) =>  mortys[key]);
-    var mortyCounter = 0;
-    var newMortyCounter = 4;
+
+    var onDeckMorty = [];
+    var needsMorty = false;
+    var mortysInPlay = 0;
     function setGameUp(){
         roundReset();
 
@@ -54,56 +55,40 @@ $(document).ready(function() {
 
     function renderMortys(){
         for (var key in mortys){
-            if(mortyCounter < 4){
+            if(mortysInPlay < 4){
                 var mortyDiv = $("<div class='mortyButton' data-name='" + key + "'>");
                 var mortyImage = $("<img alt='A wild morty appears' class='mortyImage'>").attr("src", mortys[key].image);
                 mortyDiv.append(mortyImage);
                 $("#mortyArea").append(mortyDiv);
-                mortyCounter += 1;
-            }else{
-                var mortyOnDeckImage = $("<img alt='A wild morty appears' data-name='" + key + "' class='onDeckMorty'>").attr("src", mortys[key].image);
-                $("#mortysOnDeck").append(mortyOnDeckImage);
-            }
+                mortysInPlay += 1;
+                }else{
+                    var mortyDiv = $("<div class='mortyButton' data-name='" + key + "'>");
+                    var mortyOnDeckImage = $("<img alt='A wild morty appears' class='onDeckMorty'>").attr("src", mortys[key].image);
+                    mortyDiv.append(mortyOnDeckImage);
+                    onDeckMorty.push(mortyDiv);
+                    $("#mortysOnDeck").append(mortyDiv);
+                }
         }
     }
 
-    function newMorty(){
-        console.log(onDeckMortys);
-        var mortyDiv = $("<div class='mortyButton' data-name='morty'>");
-        var mortyImage = $("<img alt='A wild morty appears' class='mortyImage'>").attr("src", onDeckMortys[newMortyCounter].image);
-        mortyDiv.append(mortyImage);
-        $("#mortyArea").append(mortyDiv);
-        newMortyCounter += 1;
+    function newMorty(needsMorty){
+        console.log(onDeckMorty);
+        if(needsMorty === true){
+            onDeckMorty[0].addClass("mortyImage");
+            onDeckMorty[0].removeClass("onDeckMorty");
+            $("#mortyArea").append(onDeckMorty[0]);
+            onDeckMorty.shift(onDeckMorty[0]);
+            console.log(onDeckMorty);
+            needsMorty = false;
+        }else{
+        }
     }
 
 
+    // A controlled for loop to render 4 images to #mortyArea,
+    //  then the rest to #onDeckMortys,
+    //  then if mortys in play < 4, move an onDeckMorty to inPlayMorty.
 
-
-
-
-
-
-
-
-
-
-    // function newMorty(){
-    //     var counter = 0;
-    //     for (var key in backupMortys){
-    //         if(counter < 1){
-    //             console.log('FROM NEW MORTYS')
-    //             console.log(key);
-    //             var mortyDiv = $("<div class='mortyButton' data-name='" + key + "'>");
-    //             var mortyImage = $("<img alt='A wild morty appears' class='mortyImage'>").attr("src", backupMortys[key].image);
-    //             mortyDiv.append(mortyImage);
-    //             $("#mortyArea").append(mortyDiv);
-    //             counter += 1;
-    //             console.log(counter);
-    //             console.log(mortyImage);
-    //         }else {
-    //         }
-    //     }
-    // }
 
     function generateMortySound(sound){
         // picks random soundbite for Morty to say every click
@@ -113,11 +98,11 @@ $(document).ready(function() {
 
     function collectMorty(morty){
         morty.remove();
-        newMorty();
+        needsMorty = true;
+        newMorty(needsMorty);
         var mortyImage = (mortys[morty.attr("data-name")]).image;
         var mortyCollectedImage = $("<img alt='A Collected Morty' class='collectedMorty'>").attr("src", mortyImage);
         $("#mortysCollected").append(mortyCollectedImage);
-
     }
 
     function updatePlayerScore(morty){
@@ -135,20 +120,17 @@ $(document).ready(function() {
 
     setGameUp();
     renderMortys();
-    // newMorty();
 
 
     $("#mortyArea").on("click", '.mortyButton', function(event){
         updatePlayerScore($(this));
-        console.log($(this));
-
     })
 
 
     // create winning game  / round win logic
     function winLose(playerScore, morty){
-        if (currentScore < targetScore){
-            // alert("You Won!");
+        if (currentScore === targetScore){
+            console.log(needsMorty);
             collectMorty(morty);
             roundReset();
             setGameUp();
