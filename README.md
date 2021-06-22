@@ -1,13 +1,13 @@
-## Jewel Collector
+## Morty Collector
 
 ## Screenshots / Gifs
 ![Screenshot](assets/images/screenshot.png)
 
 ## Motivation
-Jewel Collector was a homework assignment to practice Jquery.
+A simple homework assignment revisted and updated to a themed collecting game.
 
 ## How to
-To play Jewel Collector simpling go to https://ThaGrza.github.io/JewelCollector and click on any jewel to begin. Click and see the different values of each jewel and try to match the target score.
+To play visit *Website Link* and click one of the Morty's to reveal his value. Match your score to the target score and collect the Morty you made the winning match with! Collect all 6 Morty's to win the game.
 
 ## Tech/framework used
 <b> Built with </b>

@@ -68,7 +68,7 @@ $(document).ready(function() {
       setGame();
       renderMatchingNumber();
     }
-
+2
     // Building our win/loss display and appending it to the page.
     var wSpan = $("<span>").text(wins);
     var lSpan = $("<span>").text(losses);

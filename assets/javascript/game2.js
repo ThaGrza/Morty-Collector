@@ -1,17 +1,13 @@
 $(document).ready(function() {
     
     const mortys = {
-        morty0: {
-            points: Math.floor(Math.random() * 12) + 1,
-            image: "../assets/images/mortys/morty1.png",
-        },
         morty1: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "assets/images/mortys/morty7.png",
+            image: "assets/images/mortys/morty1.png",
         },
         morty2: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "assets/images/mortys/morty8.png",
+            image: "assets/images/mortys/morty2.png",
         },
         morty3: {
             points: Math.floor(Math.random() * 12) + 1,
@@ -23,34 +19,43 @@ $(document).ready(function() {
         },
         morty5: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "assets/images/mortys/morty2.png",
-        },
-        morty6: {
-            points: Math.floor(Math.random() * 12) + 1,
             image: "assets/images/mortys/morty5.png",
         },
-        morty7: {
-            points: Math.floor(Math.random() * 12) + 1,
-            image: "assets/images/mortys/morty6.png",
-        },
-        morty8: {
-            points: Math.floor(Math.random() * 12) + 1,
-            image: "assets/images/mortys/morty9.png",
-        },
-        morty9: {
-            points: Math.floor(Math.random() * 12) + 1,
-            image: "assets/images/mortys/Morty0.png",
-        },
+        // morty6: {
+        //     points: Math.floor(Math.random() * 12) + 1,
+        //     image: "assets/images/mortys/morty1.png",
+        // },
+        // morty7: {
+        //     points: Math.floor(Math.random() * 12) + 1,
+        //     image: "assets/images/mortys/morty2.png",
+        // },
+        // morty8: {
+        //     points: Math.floor(Math.random() * 12) + 1,
+        //     image: "assets/images/mortys/morty3.png",
+        // },
+        // morty9: {
+        //     points: Math.floor(Math.random() * 12) + 1,
+        //     image: "assets/images/mortys/morty4.png",
+        // },
+        // morty10: {
+        //     points: Math.floor(Math.random() * 12) + 1,
+        //     image: "assets/images/mortys/morty5.png",
+        // },
     }
 
     var onDeckMorty = [];
     var needsMorty = false;
     var mortysInPlay = 0;
+    var wins = 0;
+
     function setGameUp(){
         roundReset();
 
     }
-    // create GAME WIN function that keeps track of collected / ondeck mortys and animates screen when 6 are collected.
+
+// soundclips when mortys are clicked / when stuff happens.
+
+// css / mobile
 
 
     function renderMortys(){
@@ -70,7 +75,10 @@ $(document).ready(function() {
                 }
         }
     }
-
+    // *************************************************************************************************************************************************
+    // fails after first render of morty because array is empty, Need to either change the logic of function or add enough Morty's to buffer array.
+    // *************************************************************************************************************************************************
+    
     function newMorty(needsMorty){
         console.log(onDeckMorty);
         if(needsMorty === true){
@@ -78,17 +86,11 @@ $(document).ready(function() {
             onDeckMorty[0].removeClass("onDeckMorty");
             $("#mortyArea").append(onDeckMorty[0]);
             onDeckMorty.shift(onDeckMorty[0]);
-            console.log(onDeckMorty);
+            console.log(onDeckMorty.length);
             needsMorty = false;
         }else{
         }
     }
-
-
-    // A controlled for loop to render 4 images to #mortyArea,
-    //  then the rest to #onDeckMortys,
-    //  then if mortys in play < 4, move an onDeckMorty to inPlayMorty.
-
 
     function generateMortySound(sound){
         // picks random soundbite for Morty to say every click
@@ -126,14 +128,21 @@ $(document).ready(function() {
         updatePlayerScore($(this));
     })
 
+    function roundWin(){
+        wins += 1;
+        if(wins === 6){
+            alert("You won the game")
+        }
+    }
 
     // create winning game  / round win logic
     function winLose(playerScore, morty){
-        if (currentScore === targetScore){
+        if (currentScore < targetScore){
             console.log(needsMorty);
             collectMorty(morty);
             roundReset();
             setGameUp();
+            roundWin();
         }
         if (currentScore > targetScore){  
             roundReset();
