@@ -137,7 +137,7 @@ $(document).ready(function() {
 
     // create winning game  / round win logic
     function winLose(playerScore, morty){
-        if (currentScore < targetScore){
+        if (currentScore === targetScore){
             console.log(needsMorty);
             collectMorty(morty);
             roundReset();
