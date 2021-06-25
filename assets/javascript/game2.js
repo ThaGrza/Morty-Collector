@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     
     const mortys = {
         morty1: {
