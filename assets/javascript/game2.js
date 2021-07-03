@@ -1,12 +1,7 @@
-$(document).ready(function() {
-
-    // var rules = document.getElementById(".rulesModal");
-    // rules.show;
+$(document).ready(function() {    
     const winSounds = ["assets/sounds/win/alright.mp3","assets/sounds/win/heckYeah.mp3","assets/sounds/win/thankGod.mp3","assets/sounds/win/waiting.mp3"];
-
     const lossSounds = ["assets/sounds/loss/absolutely.mp3","assets/sounds/loss/doingOk.mp3",
     "assets/sounds/loss/moron.mp3","assets/sounds/loss/geez.mp3","assets/sounds/loss/sorry.mp3"];
-
     const mortySounds = ["assets/sounds/morty/anxiety.mp3","assets/sounds/morty/hello.mp3",
     "assets/sounds/morty/helpMe.mp3","assets/sounds/morty/howMuch.mp3","assets/sounds/morty/gardener.mp3",
     "assets/sounds/morty/sleep.mp3","assets/sounds/morty/weird.mp3","assets/sounds/morty/geez.mp3"];
@@ -53,7 +48,7 @@ $(document).ready(function() {
             image: "assets/images/mortys/morty10.png",
         },
     }
-
+    
     var onDeckMorty = [];
     var needsMorty = false;
     var mortysInPlay = 0;
@@ -61,13 +56,11 @@ $(document).ready(function() {
 
     function setGameUp(){
         roundReset();
-
     }
 
-// soundclips when mortys are clicked / when stuff happens.
-
-// css / mobile
-
+    function showRules(){
+        $("#modal").show();
+    }
 
     function renderMortys(){
         for (var key in mortys){
@@ -87,6 +80,7 @@ $(document).ready(function() {
         }
     }
 
+
     function newMorty(needsMorty){
         console.log(onDeckMorty);
         if(needsMorty === true){
@@ -99,6 +93,7 @@ $(document).ready(function() {
         }else{
         }
     }
+// create timer function to only play onclick morty sounds if timer > 10 seconds
 
     function generateMortySound(condition){
         if(condition === 'morty'){
@@ -143,11 +138,16 @@ $(document).ready(function() {
 
     setGameUp();
     renderMortys();
+    showRules();
 
 
     $("#mortyArea").on("click", '.mortyButton', function(event){
         updatePlayerScore($(this));
         generateMortySound('morty');
+    })
+
+    $("#modalClose").on("click", function(event){
+        $("#modal").hide();
     })
 
     function roundWin(){

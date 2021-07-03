@@ -1,6 +1,5 @@
 body {
     margin: auto;
-    background-color: #e8ebeb;
     background-image: url("https://media.istockphoto.com/vectors/space-stars-vector-illustration-of-the-night-sky-vector-id1131246596?k=6&m=1131246596&s=170667a&w=0&h=aUdMuVkhWVZuoY9pcbVTaEXBghy4OTbtHXJamg6P_GE=");
     overflow: auto;
 }
@@ -13,9 +12,20 @@ body {
     height: 100vh;
 }
 
+.rulesImage{
+    margin-top: 20px;
+    grid-column-start: 5;
+    grid-row-start: 1;
+    height: 200px;
+    width: auto;
+    z-index: 1;
+}
+
 .navbar { 
-    grid-column-start: 2;
-    grid-column-end: 6;
+    position: absolute;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 7;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -29,11 +39,9 @@ body {
     left: 0;
     top: 0; 
 }
-#lol{
-    color: white;
-}
 
 .navbarHeader {
+    display: flex;
     text-align: center;
     justify-content: center;
     font-size: 48px;
@@ -89,9 +97,6 @@ body {
     display: flex;
     background-image: url("../images/backgrounds/garage.webp");
     background-size: cover;
-    /* height: 700px;
-    width: 80%; */
-    /* margin: auto; */
 }
 
 #mortyArea{
@@ -126,7 +131,7 @@ body {
 
 #mortysCollected{
     grid-column-start: 6;
-    grid-row-start: 3;
+    grid-row-start: 2;
     display: flex;
     flex-direction: column;
     color: #a4ec28; 
@@ -136,7 +141,7 @@ body {
 
 #mortysOnDeck{
     grid-column-start: 1;
-    grid-row-start: 3;
+    grid-row-start: 2;
     display: flex;
     flex-direction: column;
     color: #a4ec28; 
@@ -153,19 +158,29 @@ body {
 }
 
 .rulesModal{
-display: none;
-position: fixed;
-z-index: 1;
-width: 100%;
-height: 100%;
-background-color: white;
-color: black;
+    background-image: url("../images/backgrounds/portal.png");
+    background-position: center;
+    /* height: 500px; */
+    margin-top: 150px;
+    justify-self: center;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    color: black;
 }
 
-#modal{
+#modalClose{
+    height: 50px;
+    width: auto;
+    transition: transform .3s;
+}
 
+#modalClose:hover{
+    transform: scale(1.5);
 }
 
 .modalContent{
-
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
 }
