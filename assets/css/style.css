@@ -2,6 +2,8 @@ body {
     margin: auto;
     background-image: url("https://media.istockphoto.com/vectors/space-stars-vector-illustration-of-the-night-sky-vector-id1131246596?k=6&m=1131246596&s=170667a&w=0&h=aUdMuVkhWVZuoY9pcbVTaEXBghy4OTbtHXJamg6P_GE=");
     overflow: auto;
+    overflow-x: hidden;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 .container {
@@ -11,14 +13,34 @@ body {
     width: 100vw;
     height: 100vh;
 }
-
-.rulesImage{
-    margin-top: 20px;
-    grid-column-start: 5;
-    grid-row-start: 1;
-    height: 200px;
+.rulesDiv{
+    padding-left: 40px;
+    display: grid;
     width: auto;
     z-index: 1;
+    grid-column-start: 5;
+    grid-row-start: 2;
+}
+
+.rulesButtonTitle{
+    padding-left: 40px;
+    color: rgb(245, 221, 11);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#modalButton{
+    text-align: center;
+    grid-row-start: 2;
+}
+
+.rulesImage{
+    grid-column-start: 5;
+    grid-row-start: 1;
+    margin-top: 60px;
+    height: 200px;
+    margin-left: 100px;
+    display: flex;
 }
 
 .navbar { 
@@ -29,7 +51,6 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
-    background-image: url("https://media.istockphoto.com/vectors/space-stars-vector-illustration-of-the-night-sky-vector-id1131246596?k=6&m=1131246596&s=170667a&w=0&h=aUdMuVkhWVZuoY9pcbVTaEXBghy4OTbtHXJamg6P_GE=");
 }
 
 #navbarImage {
@@ -44,8 +65,10 @@ body {
     display: flex;
     text-align: center;
     justify-content: center;
-    font-size: 48px;
+    margin-top: 0;
+    font-size: 72px;
     color: #a4ec28; 
+    font-family: 'Shadows Into Light', cursive;
 }
 
 .ruleText{
@@ -71,19 +94,19 @@ body {
 #targetScore {
     color: #a4ec28; 
     padding-right: 50px;
-    font-size: 26px;
+    font-size: 34px;
     font-weight: bolder;
 }
 
 #currentScore {
-    font-size: 26px;
+    font-size: 34px;
     font-weight: bolder;
     color: #a4ec28;
 }
 
 .scoreTitle{
     padding-right: 10px;
-    font-size: 24px;
+    font-size: 34px;
     color: rgb(245, 221, 11);
 }
 
@@ -134,7 +157,7 @@ body {
     grid-row-start: 2;
     display: flex;
     flex-direction: column;
-    color: #a4ec28; 
+    color: rgb(245, 221, 11);
     font-size: 25px;
     align-items: center;
 }
@@ -144,7 +167,7 @@ body {
     grid-row-start: 2;
     display: flex;
     flex-direction: column;
-    color: #a4ec28; 
+    color: rgb(245, 221, 11);
     font-size: 25px;
     align-items: center;
 }
@@ -164,23 +187,39 @@ body {
     position: fixed;
     z-index: 1;
     color: black;
-    background-color: white;
-    border-radius: 80%;
+    border-radius: 10px;
+    background-color: #adfff0;
 }
-
-#modalClose{
+.rulesButton{
     height: 50px;
     width: auto;
     transition: transform .3s;
 }
 
-#modalClose:hover{
+.rulesButton:hover{
     transform: scale(1.5);
 }
 
 .modalContent{
     padding: 10px;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     line-height: .5;
+    font-weight: 600; 
+    /* color: #7bc202;  */
+}
+
+.footer-container {
+    /* margin: 20px;
+    display: flex;
+    text-align: center;
+    margin-top: 40px; */
+}
+  
+.social-icon{
+    /* margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px; */
 }

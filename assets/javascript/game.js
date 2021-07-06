@@ -150,6 +150,11 @@ $(document).ready(function() {
         $("#modal").hide();
     })
 
+    $("#modalButton").on("click", function(event){
+        $("#modal").show();
+    })
+
+
     function roundWin(){
         wins += 1;
         if(wins === 6){

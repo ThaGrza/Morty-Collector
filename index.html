@@ -5,6 +5,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
     <title>Morty Collector</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
@@ -13,14 +16,21 @@
         <img id="navbarImage" src="https://upload.wikimedia.org/wikipedia/en/c/c8/Rick_and_Morty_logo.png">
         <h1 class="navbarHeader">Morty Collector</h1>
       </div>
+
+      <div class="rulesDiv">
+        <span class="rulesButtonTitle">Rules</span>
+        <img src="assets/images/rulesImage/portalGun.png" class="rulesButton" id="modalButton">
+      </div>
+      
       <img class="rulesImage" src="assets/images/rulesImage/mrpoopy.png">
+
 
       <div class="rulesModal" id="modal">
         <div class="modalContent">
           <p>Click on a Morty to figure out it's random value.</p>
           <p>Match your Current Score to the Target Score and collect the Morty you made the match with!</p>
           <p> Collect 6 Morty's to win the game.</p>
-          <img src="assets/images/rulesImage/portalGun.png" id="modalClose">
+          <img src="assets/images/rulesImage/portalGun.png" class="rulesButton" id="modalClose">
         </div>
       </div>
 
@@ -44,6 +54,15 @@
         <a id="mortyArea"></a>
       </div>
   </div>
+  <!-- <footer class="footer-container">
+    <script type="text/javascript">
+      document.write(new Date().getFullYear());
+    </script>
+    <p>Andrew Griswold</p>
+    <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/thagrza"> <img className="social-icon" alt="https://twitter.com/thagrza" src="https://img.icons8.com/fluent/48/000000/twitter.png"/> </a>
+    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ThaGrza"> <img className="social-icon" alt="https://github.com/ThaGrza" src="https://img.icons8.com/fluent/48/000000/github.png"/> </a>
+    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/agriswold7/"> <img className="social-icon" alt="https://www.linkedin.com/in/agriswold7/" src="https://img.icons8.com/office/16/000000/linkedin.png"/> </a>
+  </footer> -->
   <script type="text/javascript" src="assets/javascript/game.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 ## Morty Collector
 
 ## Screenshots / Gifs
-![Screenshot](assets/images/screenshot.png)
+![Screenshot](assets/images/websiteImage/screenshot.png)
 
 ## Motivation
 A simple homework assignment revisted and updated to a themed collecting game.
