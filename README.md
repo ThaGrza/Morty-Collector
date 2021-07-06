@@ -7,7 +7,7 @@
 A simple homework assignment revisted and updated to a themed collecting game.
 
 ## How to
-To play visit *Website Link* and click one of the Morty's to reveal his value. Match your score to the target score and collect the Morty you made the winning match with! Collect all 6 Morty's to win the game.
+To play visit https://thagrza.github.io/Morty-Collector/ and click one of the Morty's to reveal his value. Match your score to the target score and collect the Morty you made the winning match with! Collect all 6 Morty's to win the game.
 
 ## Tech/framework used
 <b> Built with </b>
