@@ -105,11 +105,13 @@ $(document).ready(function() {
         if(condition === 'win'){
             let winningSound = Math.floor(Math.random() * winSounds.length);
             let winSound = new Audio(winSounds[winningSound]);
+            winSound.volume = .1;
             winSound.play();
         };
         if(condition === 'loss'){
             let losingSound = Math.floor(Math.random() * lossSounds.length);
             let lossSound = new Audio(lossSounds[losingSound]);
+            lossSound.volume = .1;
             lossSound.play();
         }
     }

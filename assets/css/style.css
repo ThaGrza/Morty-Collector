@@ -4,14 +4,15 @@ body {
     overflow: auto;
     overflow-x: hidden;
     font-family: 'Shadows Into Light', cursive;
+    font-size: 18px;
+    /* width: 100vw; */
+    /* height: 100vh; */
 }
 
 .container {
     grid-template-columns: 15% 15% 20% 20% 15% 15%;
     grid-template-rows: 20% 10% 10% auto 10%;
     display: grid;
-    width: 100vw;
-    height: 100vh;
 }
 .rulesDiv{
     padding-left: 40px;
@@ -38,37 +39,30 @@ body {
     grid-column-start: 5;
     grid-row-start: 1;
     margin-top: 60px;
-    height: 200px;
+    height: 10%;
     margin-left: 100px;
     display: flex;
 }
 
-.navbar { 
-    position: absolute;
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 7;
+.navbar {
+    position: relative;
+    top: 0;
+    display: flex;
     width: 100%;
+    background-color: #fff;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 }
 
 #navbarImage {
-    height:100px;
-    width: 250px;
-    position: absolute;
-    left: 0;
-    top: 0; 
+    max-height: 80%;
+    height: 8%;
 }
 
 .navbarHeader {
-    display: flex;
-    text-align: center;
-    justify-content: center;
     margin-top: 0;
-    font-size: 72px;
+    font-size: 3rem;
     color: #a4ec28; 
-    font-family: 'Shadows Into Light', cursive;
 }
 
 .ruleText{
@@ -119,7 +113,7 @@ body {
     justify-content: center;
     display: flex;
     background-image: url("../images/backgrounds/garage.webp");
-    background-size: cover;
+    background-size:auto;
 }
 
 #mortyArea{
