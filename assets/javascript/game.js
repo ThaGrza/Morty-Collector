@@ -97,11 +97,6 @@ $(document).ready(function() {
 
 
     function generateMortySound(condition){
-        // if(condition === 'morty'){
-        //     let randomMortySound = Math.floor(Math.random() * mortySounds.length);
-        //     let mortySound = new Audio(mortySounds[randomMortySound]);
-        //     mortySound.play();
-        // }
         if(condition === 'win'){
             let winningSound = Math.floor(Math.random() * winSounds.length);
             let winSound = new Audio(winSounds[winningSound]);

@@ -1,87 +1,66 @@
 body {
     margin: auto;
-    background-image: url("https://media.istockphoto.com/vectors/space-stars-vector-illustration-of-the-night-sky-vector-id1131246596?k=6&m=1131246596&s=170667a&w=0&h=aUdMuVkhWVZuoY9pcbVTaEXBghy4OTbtHXJamg6P_GE=");
-    overflow: auto;
+    background-image: url("https://media.istockphoto.com/vectors/space-stars-vector-illustration-of-the-night-sky-vector-id1131246596?k=6&m=1131246596&s=170667a&w=0&h=aUdMuVkhWVZuoY9pcbVTaEXBghy4OTbtHXJamg6P_GE=");  
     overflow-x: hidden;
+    overflow-y: auto;
     font-family: 'Shadows Into Light', cursive;
     font-size: 18px;
-    /* width: 100vw; */
-    /* height: 100vh; */
 }
 
 .container {
-    grid-template-columns: 15% 15% 20% 20% 15% 15%;
-    grid-template-rows: 20% 10% 10% auto 10%;
+    height: 100vh;
+    width: 100vw;
     display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 20% 10% 70%;
 }
+
 .rulesDiv{
-    padding-left: 40px;
-    display: grid;
-    width: auto;
-    z-index: 1;
-    grid-column-start: 5;
-    grid-row-start: 2;
+    display: flex;
+    grid-column-start: 3;
+    grid-row-start: 1;
 }
 
 .rulesButtonTitle{
+    position: absolute;
+    margin-top: 3em;
     padding-left: 40px;
     color: rgb(245, 221, 11);
-    font-size: 20px;
+    font-size: 1.5em;
     font-weight: 600;
 }
 
 #modalButton{
+    margin-top: 8em;
     text-align: center;
-    grid-row-start: 2;
 }
 
 .rulesImage{
-    grid-column-start: 5;
-    grid-row-start: 1;
-    margin-top: 60px;
-    height: 10%;
-    margin-left: 100px;
-    display: flex;
+    height: 11em;
 }
 
 .navbar {
-    position: relative;
-    top: 0;
-    display: flex;
-    width: 100%;
-    background-color: #fff;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
+    grid-column-start: 2;
+    grid-row-start: 1;
 }
 
 #navbarImage {
-    max-height: 80%;
-    height: 8%;
+    position: absolute;
+    left: 0;
+    height: 6em;
 }
 
 .navbarHeader {
-    margin-top: 0;
-    font-size: 3rem;
+    margin: 0;
+    font-size: 5rem;
     color: #a4ec28; 
 }
 
-.ruleText{
-    font-size: 22px;
-    font-weight: 600;
-    color: rgb(245, 221, 11);
-}
-
-
-.targetScoreArea {
-    grid-column-start: 3;
-    grid-row-start: 2;
+.scoreArea{
     display: flex;
-    justify-content: center;
-}
-.currentScoreArea {
-    grid-column-start: 4;
+    grid-column-start: 2;
     grid-row-start: 2;
-    display: flex;
     justify-content: center;
 }
 
@@ -90,7 +69,8 @@ body {
     padding-right: 50px;
     font-size: 34px;
     font-weight: bolder;
-}
+    padding-right: 10em;
+} 
 
 #currentScore {
     font-size: 34px;
@@ -107,22 +87,23 @@ body {
 
 #gameArea {
     grid-column-start: 2;
-    grid-column-end: 6;
     grid-row-start: 3;
-    grid-row-end: 6;
     justify-content: center;
     display: flex;
     background-image: url("../images/backgrounds/garage.webp");
-    background-size:auto;
+    background-size:cover;
+    width: 100%;
+    height: 100%;
 }
 
 #mortyArea{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mortyImage{
-    height: 250px;
-    width: auto;
+    height: 18em;
     background-color: #a4ec28;
     margin: 10px;
     border-radius: 10%;
@@ -131,7 +112,8 @@ body {
 }
 
 .mortyButton{
-    margin: auto;
+    display: flex;
+    margin: 0;
 }
 
 .mortyImage:hover{
@@ -139,15 +121,16 @@ body {
 }
 
 .collectedMorty{
-    height: 200px;
+    justify-content: space;
+    height: 150px;
     width: 100px;
-    background-color: #a4ec28;
+    background-color: #a4ec28; 
     margin: 10px;
     border-radius: 10%;
 }
 
 #mortysCollected{
-    grid-column-start: 6;
+    grid-column-start: 3;
     grid-row-start: 2;
     display: flex;
     flex-direction: column;
@@ -167,6 +150,7 @@ body {
 }
 
 .onDeckMorty{
+    justify-content: space;
     height: 150px;
     width: 100px;
     background-color: #a4ec28; 
@@ -174,10 +158,10 @@ body {
     border-radius: 10%;
 }
 
+
 .rulesModal{
-    margin-top: 150px;
-    justify-self: center;
-    display: none;
+    margin-top: 10%;
+    margin-left: 25%;
     position: fixed;
     z-index: 1;
     color: black;
@@ -200,20 +184,4 @@ body {
     text-align: center;
     line-height: .5;
     font-weight: 600; 
-    /* color: #7bc202;  */
-}
-
-.footer-container {
-    /* margin: 20px;
-    display: flex;
-    text-align: center;
-    margin-top: 40px; */
-}
-  
-.social-icon{
-    /* margin-top: 10px;
-    margin-right: 5px;
-    margin-left: 5px;
-    width: 30px;
-    height: 30px; */
 }
