@@ -2,47 +2,48 @@ $(document).ready(function() {
     const winSounds = ["assets/sounds/win/alright.mp3","assets/sounds/win/heckYeah.mp3","assets/sounds/win/thankGod.mp3","assets/sounds/win/waiting.mp3"];
     const lossSounds = ["assets/sounds/loss/absolutely.mp3","assets/sounds/loss/doingOk.mp3",
     "assets/sounds/loss/moron.mp3","assets/sounds/loss/geez.mp3","assets/sounds/loss/sorry.mp3"];
+    const morty1 = "assets/images/mortys/Morty1.webp";
 
     const mortys = {
         morty1: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: src="/assets/images/mortys/Morty1.webp",
+            image: morty1,
         },
         morty2: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: src="/assets/images/mortys/Morty2.webp",
+            image: "assets/images/mortys/Morty2.webp",
         },
         morty3: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: src="/assets/images/mortys/Morty3.webp",
+            image: "assets/images/mortys/Morty3.webp",
         },
         morty4: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: src="/assets/images/mortys/Morty4.webp",
+            image: "assets/images/mortys/Morty4.webp",
         },
         morty5: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "/assets/images/mortys/Morty5.webp",
+            image: "assets/images/mortys/Morty5.webp",
         },
         morty6: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "/assets/images/mortys/Morty6.webp",
+            image: "assets/images/mortys/Morty6.webp",
         },
         morty7: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "/assets/images/mortys/Morty7.webp",
+            image: "assets/images/mortys/Morty7.webp",
         },
         morty8: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "/assets/images/mortys/Morty8.webp",
+            image: "assets/images/mortys/Morty8.webp",
         },
         morty9: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "/assets/images/mortys/Morty9.webp",
+            image: "assets/images/mortys/Morty9.webp",
         },
         morty10: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "/assets/images/mortys/Morty10.webp",
+            image: "assets/images/mortys/Morty10.webp",
         },
     }
 
