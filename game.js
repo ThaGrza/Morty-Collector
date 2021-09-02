@@ -6,43 +6,43 @@ $(document).ready(function() {
     const mortys = {
         morty1: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: src="/assets/images/mortys/Morty1.png",
+            image: src="/assets/images/mortys/Morty1.webp",
         },
         morty2: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: src="/assets/images/mortys/Morty2.png",
+            image: src="/assets/images/mortys/Morty2.webp",
         },
         morty3: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: src="/assets/images/mortys/Morty3.png",
+            image: src="/assets/images/mortys/Morty3.webp",
         },
         morty4: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: src="/assets/images/mortys/Morty4.png",
+            image: src="/assets/images/mortys/Morty4.webp",
         },
         morty5: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "/assets/images/mortys/Morty5.png",
+            image: "/assets/images/mortys/Morty5.webp",
         },
         morty6: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "/assets/images/mortys/Morty6.png",
+            image: "/assets/images/mortys/Morty6.webp",
         },
         morty7: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "/assets/images/mortys/Morty7.png",
+            image: "/assets/images/mortys/Morty7.webp",
         },
         morty8: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "/assets/images/mortys/Morty8.png",
+            image: "/assets/images/mortys/Morty8.webp",
         },
         morty9: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "/assets/images/mortys/Morty9.png",
+            image: "/assets/images/mortys/Morty9.webp",
         },
         morty10: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "/assets/images/mortys/Morty10.png",
+            image: "/assets/images/mortys/Morty10.webp",
         },
     }
 
