@@ -6,19 +6,19 @@ $(document).ready(function() {
     const mortys = {
         morty1: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "/assets/images/mortys/Morty1.png",
+            image: src="/assets/images/mortys/Morty1.png",
         },
         morty2: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "/assets/images/mortys/Morty2.png",
+            image: src="/assets/images/mortys/Morty2.png",
         },
         morty3: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "/assets/images/mortys/Morty3.png",
+            image: src="/assets/images/mortys/Morty3.png",
         },
         morty4: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "/assets/images/mortys/Morty4.png",
+            image: src="/assets/images/mortys/Morty4.png",
         },
         morty5: {
             points: Math.floor(Math.random() * 12) + 1,
