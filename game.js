@@ -1,7 +1,3 @@
-import testImage from 'assets/images/mortys/Morty.png';
-
-
-
 $(document).ready(function() {    
     const winSounds = ["assets/sounds/win/alright.mp3","assets/sounds/win/heckYeah.mp3","assets/sounds/win/thankGod.mp3","assets/sounds/win/waiting.mp3"];
     const lossSounds = ["assets/sounds/loss/absolutely.mp3","assets/sounds/loss/doingOk.mp3",
@@ -10,43 +6,43 @@ $(document).ready(function() {
     const mortys = {
         morty1: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: testImage,
+            image: "/assets/images/mortys/Morty1.png",
         },
         morty2: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "Morty-Collector/assets/images/mortys/Morty2.png",
+            image: "/assets/images/mortys/Morty2.png",
         },
         morty3: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "Morty-Collector/assets/images/mortys/Morty3.png",
+            image: "/assets/images/mortys/Morty3.png",
         },
         morty4: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "Morty-Collector/assets/images/mortys/Morty4.png",
+            image: "/assets/images/mortys/Morty4.png",
         },
         morty5: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "Morty-Collector/assets/images/mortys/Morty5.png",
+            image: "/assets/images/mortys/Morty5.png",
         },
         morty6: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "Morty-Collector/assets/images/mortys/Morty6.png",
+            image: "/assets/images/mortys/Morty6.png",
         },
         morty7: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "Morty-Collector/assets/images/mortys/Morty7.png",
+            image: "/assets/images/mortys/Morty7.png",
         },
         morty8: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "Morty-Collector/assets/images/mortys/Morty8.png",
+            image: "/assets/images/mortys/Morty8.png",
         },
         morty9: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "Morty-Collector/assets/images/mortys/Morty9.png",
+            image: "/assets/images/mortys/Morty9.png",
         },
         morty10: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "Morty-Collector/assets/images/mortys/Morty10.png",
+            image: "/assets/images/mortys/Morty10.png",
         },
     }
 
