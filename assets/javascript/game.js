@@ -6,7 +6,7 @@ $(document).ready(function() {
     const mortys = {
         morty1: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "Morty-Collector/assets/images/mortys/Morty1.png",
+            image: "/assets/images/mortys/Morty1.png",
         },
         morty2: {
             points: Math.floor(Math.random() * 12) + 1,
