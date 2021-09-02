@@ -1,3 +1,7 @@
+import testImage from 'assets/images/mortys/Morty.png';
+
+
+
 $(document).ready(function() {    
     const winSounds = ["assets/sounds/win/alright.mp3","assets/sounds/win/heckYeah.mp3","assets/sounds/win/thankGod.mp3","assets/sounds/win/waiting.mp3"];
     const lossSounds = ["assets/sounds/loss/absolutely.mp3","assets/sounds/loss/doingOk.mp3",
@@ -6,7 +10,7 @@ $(document).ready(function() {
     const mortys = {
         morty1: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "/assets/images/mortys/Morty1.png",
+            image: testImage,
         },
         morty2: {
             points: Math.floor(Math.random() * 12) + 1,
