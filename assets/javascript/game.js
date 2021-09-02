@@ -6,43 +6,43 @@ $(document).ready(function() {
     const mortys = {
         morty1: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "../images/mortys/morty1.png",
+            image: "/assets/images/mortys/morty1.png",
         },
         morty2: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "../images/mortys/morty2.png",
+            image: "/assets/images/mortys/morty2.png",
         },
         morty3: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "../images/mortys/morty3.png",
+            image: "/assets/images/mortys/morty3.png",
         },
         morty4: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "../images/mortys/morty4.png",
+            image: "/assets/images/mortys/morty4.png",
         },
         morty5: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "../images/mortys/morty5.png",
+            image: "/assets/images/mortys/morty5.png",
         },
         morty6: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "../images/mortys/morty6.png",
+            image: "/assets/images/mortys/morty6.png",
         },
         morty7: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "../images/mortys/morty7.png",
+            image: "/assets/images/mortys/morty7.png",
         },
         morty8: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "../images/mortys/morty8.png",
+            image: "/assets/images/mortys/morty8.png",
         },
         morty9: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "../images/mortys/morty9.png",
+            image: "/assets/images/mortys/morty9.png",
         },
         morty10: {
             points: Math.floor(Math.random() * 12) + 1,
-            image: "../images/mortys/morty10.png",
+            image: "/assets/images/mortys/morty10.png",
         },
     }
     
